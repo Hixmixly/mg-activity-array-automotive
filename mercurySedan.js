@@ -8,6 +8,21 @@ console.log(v.make)
 
 //After you write the derived Car class, you should test it out.
 
+class Car  extends VehicleModule {
+    constructor (make, model, year, color, mileage){
+        super(make, model, year, color, mileage)
+        this.make= make;
+        this.model= model;
+        this.year= year;
+        this.color= color;
+        this.mileage= mileage;
+
+
+    }
+
+
+}
+
 //Note: You can code your derived Car class here or make a file named index.js and do it there.
 
 
