@@ -11,16 +11,31 @@ console.log(v.make)
 class Car  extends VehicleModule {
     constructor (make, model, year, color, mileage){
         super(make, model, year, color, mileage)
-        this.make= make;
-        this.model= model;
-        this.year= year;
-        this.color= color;
-        this.mileage= mileage;
+        this.maximumPassengers= 5;
+        this.passengers= 0;
+        this.numberOfWheels= 4;
+        this.msximumSpeed= 160;
+        this.fuel= 10;
+        this.scheduleService= false;
+        }
+    
+    loadPassenger(num){
+        if(this.passengers ) 
+    }
 
+    start(){ 
+        
 
     }
 
-
+    scheduleService(mileage) {
+        console.log(){
+            if (this.mileage > 3000) {
+                this.scheduleService = true
+                return this.scheduleService;
+            }       
+        }
+    }
 }
 
 //Note: You can code your derived Car class here or make a file named index.js and do it there.
