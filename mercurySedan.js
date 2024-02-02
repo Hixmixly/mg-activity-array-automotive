@@ -20,11 +20,27 @@ class Car  extends VehicleModule {
         }
     
     loadPassenger(num){
-        if(this.passengers ) 
+        if(this.passengers < this.maxPassangers) {
+            if ((num + this.maximumPassengers) <= this.masPassangers) {
+                this.passenger =num;
+                return this.passenger;
+            } else {
+                console.log (this.model + "" + this.make + "not enough space for all passangers");
+            } 
+
+        }  else {
+            console.log(this.model +"" +this.make +"is full");
+        }
     }
 
     start(){ 
-        
+        if (this.fuel > 0){
+            console.log ("engine has started");
+            return this.strared = true
+        } else {
+            console.log ("no fuel");
+            return this.started = false;
+        }
 
     }
 
@@ -38,12 +54,22 @@ class Car  extends VehicleModule {
     }
 }
 
+
 //Note: You can code your derived Car class here or make a file named index.js and do it there.
 
 
 //TO DO: Code the Car subclass here or in index.js file, i.e. class Car extends Vehicle ...
 
+let myCar = new Car ("ford", "model-t", 2000, "blue", 3500 )
 
+let myCar = Car ("bmw","gv80", 2024, "red", 1000)
+
+myCar.start()
+myCar.loadPassenger(4)
+myCar.stop()
+myCar.checkService()
+
+console.log(myCar)
 
 
 
