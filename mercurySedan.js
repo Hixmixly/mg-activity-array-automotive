@@ -6,7 +6,6 @@ let v = new VehicleModule.Vehicle("Mercury", "Sedan", "1965", "color", "mileage"
 console.log(v.make)
 
 
-//After you write the derived Car class, you should test it out.
 
 class Car  extends VehicleModule {
     constructor (make, model, year, color, mileage){
@@ -55,14 +54,11 @@ class Car  extends VehicleModule {
 }
 
 
-//Note: You can code your derived Car class here or make a file named index.js and do it there.
 
-
-//TO DO: Code the Car subclass here or in index.js file, i.e. class Car extends Vehicle ...
 
 let myCar = new Car ("ford", "model-t", 2000, "blue", 3500 )
-
-let myCar = Car ("bmw","gv80", 2024, "red", 1000)
+let myCar2= new Car ("bmw","gv20", 2024, "green", 1000 )
+let myCar3= new Car ("audi", "a7", 2020, "black", 1747)
 
 myCar.start()
 myCar.loadPassenger(4)
@@ -70,22 +66,7 @@ myCar.stop()
 myCar.checkService()
 
 console.log(myCar)
+console.log(myCar2)
 
 
 
-
-
-
-
-
-
-
-//TO DO: Creating Instances and Testing Them
-
-//You can use the same instance "v" of the Vehicle class above for the base class.
-
-
-
-
-
-//Create at least two new instances of the Car class and test them here:
